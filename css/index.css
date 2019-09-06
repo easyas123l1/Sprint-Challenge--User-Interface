@@ -230,5 +230,36 @@ footer nav a {
 .about-page {
     width: 60%;
     margin: auto;
+}
+
+.individualbox {
+    width: 45%;
+    padding-bottom: 4%;
     border-bottom: 1px black dashed;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+.individualbox img {
+    margin-top: 10%;
+    width: 100%;
+    
+}
+
+.about {
+    padding-bottom: 2%;
+    border-bottom: 1px black dashed;
+}
+
+button {
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 2%;
 }
