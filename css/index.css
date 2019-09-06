@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 0px black solid;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -91,14 +91,24 @@ nav .logo {
 }
 
 header {
+    margin-top: 2%;
     display: flex;
     align-items: baseline;
+}
+
+.container img {
+    display: flex;
+    margin: auto;
+    padding: 2%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px black dashed;
 }
 
 .top-content .text-container {
@@ -110,6 +120,9 @@ header {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-top: 2%;
+    width: 80%;
+    margin: auto;
 }
 
 .middle-content h2 {
