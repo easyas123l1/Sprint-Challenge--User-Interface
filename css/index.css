@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 0px black solid;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -26,7 +26,8 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
+    
 }
 body {
 	line-height: 1;
@@ -66,17 +67,50 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+header nav a {
+    margin: 0;
+    padding: 0px 20px;
+    text-decoration: black;
+    color: black;
+}
+
+nav .logo {
+    justify-self: flex-start;
     margin: 0 auto;
+}
+
+.header {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 2%;
+    display: flex;
+    align-items: baseline;
+}
+
+.container img {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    padding: 2%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    border-bottom: 1px black dashed;
 }
 
 .top-content .text-container {
@@ -88,6 +122,9 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-top: 2%;
+    width: 60%;
+    margin: auto;
 }
 
 .middle-content h2 {
@@ -112,10 +149,53 @@ p {
     justify-content: center;
 }
 
+.boxes .box:nth-child(1n) {
+    background-color: teal;
+ }
+ 
+.boxes .box:nth-child(2n) {
+    background-color: gold;
+ }
+
+.boxes .box:nth-child(3n) {
+    background-color: cadetblue;
+ }
+
+.boxes .box:nth-child(4n) {
+   background-color: coral;
+ }
+
+.boxes .box:nth-child(5n) {
+   background-color: crimson;
+ }
+
+.boxes .box:nth-child(6n) {
+   background-color: forestgreen;
+ }
+
+.boxes .box:nth-child(7n) {
+    background-color: darkorchid;
+ }
+
+.boxes .box:nth-child(8n) {
+   background-color: hotpink;
+ }
+
+.boxes .box:nth-child(9n) {
+   background-color: indigo;
+ }
+
+.boxes .box:nth-child(10n) {
+   background-color: dodgerblue;
+ }
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    padding-top: 2%;
+    width: 60%;
+    margin: auto;
 }
 
 .bottom-content .text-container {
@@ -127,8 +207,10 @@ p {
 }
 
 footer {
-    width: 100%;
+    width: 60%;
+    margin: auto;
     background: black;
+    margin-top: 2%;
 }
 
 footer nav {
@@ -143,4 +225,44 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about-page {
+    width: 60%;
+    margin: auto;
+}
+
+.individualbox {
+    width: 45%;
+    padding-bottom: 4%;
+    border-bottom: 1px black dashed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+.individualbox img {
+    margin-top: 10%;
+    width: 100%;
+}
+
+.about {
+    padding-bottom: 2%;
+    border-bottom: 1px black dashed;
+}
+
+button {
+    margin-top: 5%;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 2% 10%;
 }
